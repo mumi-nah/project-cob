@@ -33,7 +33,7 @@ variable "private-subnet-cidrs" {
     type = list(string)
 }
 
-variable "enable-enable_nat_gateway" {
+variable "enable-nat-gateway" {
     description = "Whether to provision NAT gateway(s) for private subnet egress"
     type = bool
     default = true
