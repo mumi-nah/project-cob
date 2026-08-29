@@ -1,0 +1,31 @@
+Check out aws configure vs aws login
+First create state backend, and enable locking
+Check out terraform built-in functions:
+https://developer.hashicorp.com/terraform/language/functions
+To test out how terraform functions behave in thr console,
+run terraform console and use the functions in the console
+Understand the step by step process of creating a module
+Watch the modules tutorial on Youtube
+Read the documentation on creating a module:
+developer.hashicorp.com/terraform/language/modules/develop
+then read the workflow part of this page and watch the tutorials:
+developer.hashicorp.com/terraform/language/modules
+Go to the modules section in the registry, 
+look at the available ones and how they are built, check their github
+Understand what is expected in my project
+GET STARTED
+
+
+router, routing table, NAT, NAT Gateway, Security groups, ASG - auto scaling group, ACL etc
+
+
+
+Network inputs
+environment
+CIDR range
+AZs
+
+Network Outputs
+VPC id
+Subnet IDs, specified if privte or public
+Route table IDs

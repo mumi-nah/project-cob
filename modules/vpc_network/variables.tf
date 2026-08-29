@@ -9,22 +9,22 @@ variable "environment" {
 }
 
 variable "tags" {
-    descricption = "Common tags applied to all resources"
+    description = "Common tags applied to all resources"
     type = map(string)
     default = {}
 }
 
 variable "vpc-cidr" {
-    descricption = "CIDR Range for the vpc"
+    description = "CIDR Range for the vpc"
     type = string
 }
 
 variable "available-zones" {
-    descricption = "List of AZs to spread subnets accross"
+    description = "List of AZs to spread subnets accross"
     type = list(string)
 }
 variable "public-subnet-cidrs" {
-    descricption "CIDR Range for public subnets, one per AZ"
+    description "CIDR Range for public subnets, one per AZ"
     type = list(string)
 }
 
@@ -34,13 +34,13 @@ variable "private-subnet-cidrs" {
 }
 
 variable "enable-enable_nat_gateway" {
-    descricption = "Whether to provision NAT gateway(s) for private subnet egress"
+    description = "Whether to provision NAT gateway(s) for private subnet egress"
     type = bool
     default = true
 }
 
 variable "single-nat-gateway" {
-    descricption = "Use one NAT gateway for all AZs (cheaper, less resilient) instead of one per AZ"
+    description = "Use one NAT gateway for all AZs (cheaper, less resilient) instead of one per AZ"
     type = bool
     default = true
 }
