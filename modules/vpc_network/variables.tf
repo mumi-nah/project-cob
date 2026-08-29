@@ -44,3 +44,9 @@ variable "single-nat-gateway" {
     type = bool
     default = true
 }
+
+variable "instance_tenancy" {
+    description = "specifies the tenancy to type to use for the resource (EC2)"
+    type = string
+    default = default
+}
