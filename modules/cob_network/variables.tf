@@ -1,4 +1,4 @@
-variable "project-name" {
+variable "project_name" {
     description = "Short project/platform identifier used in resource naming"
     type = string
 }
@@ -14,32 +14,32 @@ variable "tags" {
     default = {}
 }
 
-variable "vpc-cidr" {
+variable "vpc_cidr" {
     description = "CIDR Range for the vpc"
     type = string
 }
 
-variable "available-zones" {
+variable "availability_zones" {
     description = "List of AZs to spread subnets accross"
     type = list(string)
 }
-variable "public-subnet-cidrs" {
-    description "CIDR Range for public subnets, one per AZ"
+variable "public_subnet_cidrs" {
+    description  = "CIDR Range for public subnets, one per AZ"
     type = list(string)
 }
 
-variable "private-subnet-cidrs" {
+variable "private_subnet_cidrs" {
     description = "CIDR Range for private subnets, one per AZ"
     type = list(string)
 }
 
-variable "enable-nat-gateway" {
+variable "enable_nat_gateway" {
     description = "Whether to provision NAT gateway(s) for private subnet egress"
     type = bool
     default = true
 }
 
-variable "single-nat-gateway" {
+variable "single_nat_gateway" {
     description = "Use one NAT gateway for all AZs (cheaper, less resilient) instead of one per AZ"
     type = bool
     default = true
@@ -48,5 +48,5 @@ variable "single-nat-gateway" {
 variable "instance_tenancy" {
     description = "specifies the tenancy to type to use for the resource (EC2)"
     type = string
-    default = default
+    default = "default"
 }

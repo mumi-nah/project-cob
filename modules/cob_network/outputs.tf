@@ -37,7 +37,7 @@ output "private_route_table_ids" {
 
 output "nat_gateway_public_ips" {
   description = "Public IPs of NAT gateways — useful for allow-listing on external services"
-  value       = aws_eip.ngw[*].public_ip
+  value       = aws_eip.eip[*].public_ip
 }
 
 output "vpc_cidr_block" {
