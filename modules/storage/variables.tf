@@ -4,7 +4,7 @@ variable "project_name" {
 }
 
 variable "environment" {
-  type = string   # required, no default — same rationale as networking/iam
+  type = string  
 
   validation {
     condition     = contains(["dev", "staging", "prod"], var.environment)
